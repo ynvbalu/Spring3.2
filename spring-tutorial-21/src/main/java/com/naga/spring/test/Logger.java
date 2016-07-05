@@ -1,4 +1,4 @@
-package com.caveofprogramming.spring.test;
+package com.naga.spring.test;
 
 /*
  * Dummy implementation of logger.
