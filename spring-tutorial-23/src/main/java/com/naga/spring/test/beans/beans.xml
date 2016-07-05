@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:p="http://www.springframework.org/schema/p"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
-	default-autowire="byType">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+  default-autowire="byType">
 
+  <bean id="logger" class="com.naga.spring.test.Logger">
+  </bean>
 
-	<bean id="logger" class="com.naga.spring.test.Logger">
+  <bean id="consoleWriter" class="com.naga.spring.test.ConsoleWriter" primary="true">
+  </bean>
 
-	</bean>
+  <bean id="panda" class="com.naga.spring.test.ConsoleWriter">
+  </bean>
 
-	<bean id="consoleWriter"
-		class="com.naga.spring.test.ConsoleWriter"
-		primary="true">
-	</bean>
+  <bean id="fileWriter" class="com.naga.spring.test.FileWriter">
+  </bean>
 
-	<bean id="panda" class="com.naga.spring.test.ConsoleWriter">
-	</bean>
-
-	<bean id="fileWriter"
-		class="com.naga.spring.test.FileWriter">
-	</bean>
-
-	<bean id="squirrel"
-		class="com.naga.spring.test.FileWriter"
-		autowire-candidate="false">
-	</bean>
+  <bean id="squirrel" class="com.naga.spring.test.FileWriter" autowire-candidate="false">
+  </bean>
 
 </beans>
