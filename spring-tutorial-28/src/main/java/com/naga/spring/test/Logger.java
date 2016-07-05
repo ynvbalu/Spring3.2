@@ -1,11 +1,6 @@
-package com.caveofprogramming.spring.test;
+package com.naga.spring.test;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 
 /*
  * Dummy implementation of logger.
