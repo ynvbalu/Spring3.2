@@ -6,24 +6,24 @@
 	default-autowire="byType">
 
 
-	<bean id="logger" class="com.caveofprogramming.spring.test.Logger">
+	<bean id="logger" class="com.naga.spring.test.Logger">
 
 	</bean>
 
 	<bean id="consoleWriter"
-		class="com.caveofprogramming.spring.test.ConsoleWriter"
+		class="com.naga.spring.test.ConsoleWriter"
 		primary="true">
 	</bean>
 
-	<bean id="panda" class="com.caveofprogramming.spring.test.ConsoleWriter">
+	<bean id="panda" class="com.naga.spring.test.ConsoleWriter">
 	</bean>
 
 	<bean id="fileWriter"
-		class="com.caveofprogramming.spring.test.FileWriter">
+		class="com.naga.spring.test.FileWriter">
 	</bean>
 
 	<bean id="squirrel"
-		class="com.caveofprogramming.spring.test.FileWriter"
+		class="com.naga.spring.test.FileWriter"
 		autowire-candidate="false">
 	</bean>
 
