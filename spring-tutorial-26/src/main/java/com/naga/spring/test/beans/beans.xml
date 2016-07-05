@@ -7,16 +7,16 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 
-	<bean id="logger" class="com.caveofprogramming.spring.test.Logger">
+	<bean id="logger" class="com.naga.spring.test.Logger">
 
 	</bean>
 
 	<bean id="consoleWriter"
-		class="com.caveofprogramming.spring.test.ConsoleWriter">
+		class="com.naga.spring.test.ConsoleWriter">
 	</bean>
 	
 	<bean id="fileWriter"
-		class="com.caveofprogramming.spring.test.FileWriter">
+		class="com.naga.spring.test.FileWriter">
 	</bean>
 
 	<context:annotation-config></context:annotation-config>
