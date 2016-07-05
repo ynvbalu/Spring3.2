@@ -4,8 +4,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="basket" class="com.caveofprogramming.spring.test.FruitBasket">
+	<bean id="basket" class="com.naga.spring.test.FruitBasket">
+  
 		<constructor-arg value="John's basket"></constructor-arg>
+    
 		<constructor-arg>
 			<list>
 				<value>apple</value>
