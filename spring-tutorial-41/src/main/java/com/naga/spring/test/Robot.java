@@ -1,4 +1,4 @@
-package com.caveofprogramming.spring.test;
+package com.naga.spring.test;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,7 +15,7 @@ public class Robot {
 	}
 
 	@Autowired
-	public void setId(@Value("${jdbc.user}") String id) {
+	public void setId(@Value("${jdbc.username}") String id) {
 		this.id = id;
 	}
 
