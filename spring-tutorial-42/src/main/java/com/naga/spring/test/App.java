@@ -1,4 +1,4 @@
-package com.caveofprogramming.spring.test;
+package com.naga.spring.test;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/caveofprogramming/spring/test/beans/beans.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/naga/spring/test/beans/beans.xml");
 		
 		OffersDAO offersDao = (OffersDAO)context.getBean("offersDao");
 		
